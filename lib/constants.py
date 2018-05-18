@@ -71,21 +71,21 @@ class BitcoinTestnet:
     WIF_PREFIX = 0xbf
     ADDRTYPE_P2PKH = 111
     ADDRTYPE_P2SH = 58
-    SEGWIT_HRP = "tltc"
-    GENESIS = "4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"
+    SEGWIT_HRP = "tbery"
+    GENESIS = "fa211189d78247c5173828cdf035a808a69d74294022d0d5d170d707544d7ba8"
     DEFAULT_PORTS = {'t': '51001', 's': '51002'}
     DEFAULT_SERVERS = read_json('servers_testnet.json', {})
     CHECKPOINTS = read_json('checkpoints_testnet.json', [])
 
     XPRV_HEADERS = {
-        'standard':    0x04358394,  # tprv
+        'standard':    0x053784a4,  # tprv
         'p2wpkh-p2sh': 0x044a4e28,  # uprv
         'p2wsh-p2sh':  0x024285b5,  # Uprv
         'p2wpkh':      0x045f18bc,  # vprv
         'p2wsh':       0x02575048,  # Vprv
     }
     XPUB_HEADERS = {
-        'standard':    0x043587cf,  # tpub
+        'standard':    0x053782bf,  # tpub
         'p2wpkh-p2sh': 0x044a5262,  # upub
         'p2wsh-p2sh':  0x024289ef,  # Upub
         'p2wpkh':      0x045f1cf6,  # vpub
@@ -95,8 +95,8 @@ class BitcoinTestnet:
 
 class BitcoinRegtest(BitcoinTestnet):
 
-    SEGWIT_HRP = "rltc"
-    GENESIS = "530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"
+    SEGWIT_HRP = "rbery"
+    GENESIS = "3ba0bdc07f1acbd0453d2976a5faa10c10e7b14c93b83fad0d99b3b8c8c7d731"
     DEFAULT_SERVERS = read_json('servers_regtest.json', {})
     CHECKPOINTS = []
 
