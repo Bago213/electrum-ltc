@@ -1,14 +1,14 @@
 {
-    "electrum.resteemexposure.com": {
-        "pruning": "-",
-        "s": "50001",
-        "t": "50002",
-        "version": "1.2"
-    },
     "electrum2.berycoin.com": {
         "pruning": "-",
-        "s": "50001",
-        "t": "50002",
+        "s": "50002",
+        "t": "50001",
+        "version": "1.2"
+    },
+    "electrum.resteemexposure.com": {
+        "pruning": "-",
+        "s": "50002",
+        "t": "50001",
         "version": "1.2"
     }
 }
